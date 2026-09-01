@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Bassotto Café — Las Condes</title>
+<meta name="description" content="Bassotto Café: café de especialidad y punto de encuentro pet-friendly en Las Condes.">
+<link rel="icon" type="image/jpeg" href="c:\Users\alvay\OneDrive\Escritorio\bassotto1\logo-bassotto.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- INTRO -->
+<div id="intro" aria-hidden="true">
+  <div class="introMark">
+    <div class="introRing"></div>
+    <img src="c:\Users\alvay\OneDrive\Escritorio\bassotto1\logo-bassotto.jpg" alt="" class="introLogo">
+  </div>
+  <p class="introTag">café de especialidad · Las Condes</p>
+</div>
+
+<div id="app">
+
+  <!-- NAV -->
+  <header class="topnav">
+    <button class="brand" data-goto="inicio" aria-label="Ir a inicio">
+      <img src="c:\Users\alvay\OneDrive\Escritorio\bassotto1\logo-bassotto.jpg" alt="Bassotto Café" class="brandmark">
+      <span>Bassotto</span>
+    </button>
+    <nav class="navlinks" aria-label="Secciones">
+      <button data-goto="inicio" class="navlink is-active">Inicio</button>
+      <button data-goto="historia" class="navlink">Nuestra historia</button>
+      <button data-goto="menu" class="navlink">Menú</button>
+      <button data-goto="ubicacion" class="navlink">Ubicación</button>
+      <button data-goto="redes" class="navlink">Redes</button>
+    </nav>
+    <a class="navcta" href="https://www.google.com/maps/place/Bassotto+Caf%C3%A9/@-33.4027013,-70.5730705,17z/data=!3m1!4b1!4m6!3m5!1s0x9662cf510749981d:0x193b149abdc035d7!8m2!3d-33.4027013!4d-70.5704902" target="_blank" rel="noopener">Cómo llegar</a>
+    <button class="navtoggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="stage">
+
+    <!-- INICIO -->
+    <section class="panel panel--center is-active" id="inicio" data-panel="inicio">
+      <div class="panel-inner hero">
+        <div class="hero-copy">
+          <p class="eyebrow-free">Café de especialidad · Las Condes</p>
+          <h1>El café se sirve<br> con la correa suelta.</h1>
+          <p class="lede">Un rincón industrial y cálido donde el espresso se trabaja con calma, los perros tienen su propia carta y nadie te apura la sobremesa.</p>
+          <div class="hero-actions">
+            <button class="btn btn-solid" data-goto="menu">Ver el menú</button>
+            <a class="btn btn-line" href="https://www.google.com/maps/place/Bassotto+Caf%C3%A9/@-33.4027013,-70.5730705,17z/data=!3m1!4b1!4m6!3m5!1s0x9662cf510749981d:0x193b149abdc035d7!8m2!3d-33.4027013!4d-70.5704902" target="_blank" rel="noopener">Cómo llegar</a>
+          </div>
+          <div class="hero-stats">
+            <div><strong class="counter" data-count="4.8">0</strong><span>en Google, 126 reseñas</span></div>
+            <div><strong class="counter" data-count="2">0</strong><span>gerentes peluditos: Mokachina y Capuchino</span></div>
+            <div><strong class="counter" data-count="7">0</strong><span>días a la semana abiertos</span></div>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="hero-logo-frame">
+            <img src="c:\Users\alvay\OneDrive\Escritorio\bassotto1\logo-bassotto.jpg" alt="Sello Bassotto Café, café de especialidad" class="hero-logo-img">
+          </div>
+          <!-- Sugerencia: reemplazar o acompañar con foto horizontal de la fachada o la barra en acción -->
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORIA -->
+    <section class="panel panel--center" id="historia" data-panel="historia">
+      <div class="panel-inner split">
+        <div class="split-art">
+          <div class="photogrid">
+            <figure class="pgItem pgItem--tall">
+              <img src="c:\Users\alvay\OneDrive\Escritorio\bassotto1\historia-1.jpg" alt="Uno de los perros de Bassotto junto a una ilustración enmarcada">
+            </figure>
+            <figure class="pgItem">
+              <img src="c:\Users\alvay\OneDrive\Escritorio\bassotto1\historia-2.jpg" alt="Latte art de Bassotto Café bajo un letrero de Dachshund Coffee Co.">
+            </figure>
+            <!-- Espacio libre para una tercera foto: sugerido interior/barra del local -->
+            <figure class="pgItem">
+              <img src="c:\Users\alvay\OneDrive\Escritorio\bassotto1\historia-1.jpg" alt="Latte art de Bassotto Café bajo un letrero de Dachshund Coffee Co.">
+            </figure>
+          </div>
+        </div>
+        <div class="split-copy">
+          <p class="eyebrow-free">Nuestra historia</p>
+          <h2>Dos años viajando para volver a casa con una idea.</h2>
+          <p>Javiera Valdés y Herman Ferrada vivieron dos años en Reino Unido recorriendo cafeterías que hacían del café un ritual, no un trámite. Volvieron a Santiago con esa idea — y con sus dos gerentes peluditos, Mokachina y Capuchino, que hoy reciben en la puerta.</p>
+          <p>Desde la barra, una La Marzocco marca el ritmo: cada espresso se prepara a la vista, sin apuro. La carta rota semana a semana y conviven clásicos con salidas de molde, como el espresso tonic.</p>
+          <p>El local combina madera vista, acero negro y luz cálida — zonas para leer, mesas para juntarse y una terraza para cuando llega el sol. Un espacio pensado para quedarse, con o sin correa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section class="panel" id="menu" data-panel="menu">
+      <div class="panel-inner menuwrap">
+        <div class="menuwrap-head">
+          <div>
+            <p class="eyebrow-free">La carta</p>
+            <h2>El menú completo</h2>
+          </div>
+          <p class="menuintro">Precios referenciales. Toca una tarjeta para ver el detalle.</p>
+        </div>
+
+        <div class="menutabs" role="tablist">
+          <button class="mtab is-active" data-menu="brunch" role="tab" aria-selected="true">Brunch</button>
+          <button class="mtab" data-menu="cafe" role="tab" aria-selected="false">Café caliente</button>
+          <button class="mtab" data-menu="almuerzo" role="tab" aria-selected="false">Almuerzo</button>
+          <button class="mtab" data-menu="bolleria" role="tab" aria-selected="false">Bollería</button>
+          <button class="mtab" data-menu="merch" role="tab" aria-selected="false">Merch</button>
+        </div>
+
+        <div class="menupanels">
+          <!-- BRUNCH -->
+          <div class="menugrid is-active" data-menupanel="brunch">
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: brunch individual completo"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Brunch Individual</h3><span class="prodPrice">$15.990</span></div>
+                  <p class="prodPreview">1 jugo + 1 café + tostadas + tarta o danesa</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>1 Jugo + 1 Café + Tostadas + Tarta o Danesa. La forma completa de partir el día en Bassotto.</p>
+                  <span class="prodBackPrice">$15.990</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- CAFÉ CALIENTE -->
+          <div class="menugrid" data-menupanel="cafe">
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: espresso"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Espresso</h3><span class="prodPrice">$2.990</span></div>
+                  <p class="prodPreview">Espresso doble</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Espresso doble, la base de toda la carta.</p>
+                  <span class="prodBackPrice">$2.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: ristretto"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Ristretto</h3><span class="prodPrice">$2.990</span></div>
+                  <p class="prodPreview">Shot corto e intenso</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Shot de café más corto e intenso que el espresso.</p>
+                  <span class="prodBackPrice">$2.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: lungo"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Lungo</h3><span class="prodPrice">$2.990</span></div>
+                  <p class="prodPreview">Espresso doble alargado</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Espresso doble alargado.</p>
+                  <span class="prodBackPrice">$2.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: macchiato"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Macchiato</h3><span class="prodPrice">$3.750</span></div>
+                  <p class="prodPreview">Manchado con leche</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Espresso doble manchado con leche.</p>
+                  <span class="prodBackPrice">$3.750</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: americano"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Americano</h3><span class="prodPrice">$3.500</span></div>
+                  <p class="prodPreview">Espresso con agua caliente</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Espresso doble alargado con agua caliente.</p>
+                  <span class="prodBackPrice">$3.500</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: flat white"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Flat White</h3><span class="prodPrice">$4.200</span></div>
+                  <p class="prodPreview">Leche y fina espuma</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Espresso doble con leche y una fina capa de espuma.</p>
+                  <span class="prodBackPrice">$4.200</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: capuchino"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Capuchino</h3><span class="prodPrice">$3.990</span></div>
+                  <p class="prodPreview">200 mL</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Espresso doble con leche (200 mL).</p>
+                  <span class="prodBackPrice">$3.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: latte"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Latte</h3><span class="prodPrice">$4.200</span></div>
+                  <p class="prodPreview">300 mL</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Espresso doble con leche (300 mL).</p>
+                  <span class="prodBackPrice">$4.200</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: filtrado"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Filtrado</h3><span class="prodPrice">$5.000</span></div>
+                  <p class="prodPreview">Método clásico</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Método de filtrado clásico de la casa.</p>
+                  <span class="prodBackPrice">$5.000</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: filtrado único"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Filtrado Único</h3><span class="prodPrice">$6.000</span></div>
+                  <p class="prodPreview">Origen único, rotativo</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Filtrado especial de origen único, rotativo.</p>
+                  <span class="prodBackPrice">$6.000</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: uno más uno"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Uno + Uno</h3><span class="prodPrice">$8.990</span></div>
+                  <p class="prodPreview">Filtrado + Flat White</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Un Café Filtrado Especial de la casa y un Flat White al estilo australiano, para lucir nuestras cualidades.</p>
+                  <span class="prodBackPrice">$8.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: mokachina"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>MokaChina</h3><span class="prodPrice">$4.800</span></div>
+                  <p class="prodPreview">Con cacao</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Espresso doble con leche y cacao.</p>
+                  <span class="prodBackPrice">$4.800</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: chocolate caliente"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Chocolate Caliente</h3><span class="prodPrice">$4.700</span></div>
+                  <p class="prodPreview">Con leche</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Chocolate con leche.</p>
+                  <span class="prodBackPrice">$4.700</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: choco banana caliente"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Choco-Banana Caliente</h3><span class="prodPrice">$4.900</span></div>
+                  <p class="prodPreview">Con syrup de plátano</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Chocolate con leche y syrup de plátano.</p>
+                  <span class="prodBackPrice">$4.900</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: hojicha latte"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Hojicha Latte</h3><span class="prodPrice">$4.800</span></div>
+                  <p class="prodPreview">Té hojicha con leche</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Té hojicha con leche.</p>
+                  <span class="prodBackPrice">$4.800</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: pumpkin spice latte"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Pumpkin Spice Latte</h3><span class="prodPrice">$4.700</span></div>
+                  <p class="prodPreview">Syrup de calabaza dulce</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Espresso doble con leche y syrup de calabaza dulce.</p>
+                  <span class="prodBackPrice">$4.700</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: latte salted caramel"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Latte Salted Caramel</h3><span class="prodPrice">$4.700</span></div>
+                  <p class="prodPreview">Caramelo y sal de Cáhuil</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Espresso doble con leche, syrup de caramelo y sal de Cáhuil.</p>
+                  <span class="prodBackPrice">$4.700</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: mega latte"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>MEGA Latte</h3><span class="prodPrice">$4.990</span></div>
+                  <p class="prodPreview">500 mL</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Doble shot, ahora más grande (500 mL) para un día desafiante.</p>
+                  <span class="prodBackPrice">$4.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: mega capu"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>MEGA Capu</h3><span class="prodPrice">$5.990</span></div>
+                  <p class="prodPreview">500 mL</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Dos dobles shots y leche, ahora más grande (500 mL) para un día desafiante.</p>
+                  <span class="prodBackPrice">$5.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: shot de espresso extra"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Shot de Espresso Extra</h3><span class="prodPrice">$990</span></div>
+                  <p class="prodPreview">Shot doble extra</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Shot espresso doble extra para cualquier bebida.</p>
+                  <span class="prodBackPrice">$990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: extra shot de syrup"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Extra Shot de Syrup</h3><span class="prodPrice">$600</span></div>
+                  <p class="prodPreview">Para bebidas calientes</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Para cualquier bebida con leche caliente.</p>
+                  <span class="prodBackPrice">$600</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- ALMUERZO -->
+          <div class="menugrid" data-menupanel="almuerzo">
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: ají gallina arroz"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Ají Gallina Arroz</h3><span class="prodPrice">$7.990</span></div>
+                  <p class="prodPreview">Con arroz</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Ají de gallina con arroz.</p>
+                  <span class="prodBackPrice">$7.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: carne champiñón arroz"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Carne Champiñón Arroz</h3><span class="prodPrice">$7.990</span></div>
+                  <p class="prodPreview">Salsa de champiñones</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Carne con salsa de champiñones y arroz.</p>
+                  <span class="prodBackPrice">$7.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: lasaña"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Lasaña</h3><span class="prodPrice">$7.990</span></div>
+                  <p class="prodPreview">De boloñesa</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Lasaña de boloñesa.</p>
+                  <span class="prodBackPrice">$7.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: vacuno bourguiñón arroz"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Vacuno Bourguiñón Arroz</h3><span class="prodPrice">$7.990</span></div>
+                  <p class="prodPreview">Arroz perla y verduras</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Vacuno al borguiñón con arroz perla y verduras.</p>
+                  <span class="prodBackPrice">$7.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: lomo de cerdo"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Lomo Cerdo</h3><span class="prodPrice">$7.990</span></div>
+                  <p class="prodPreview">Mostaza y miel</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Lomo de cerdo a la mostaza y miel, con vegetales mixtos y arroz.</p>
+                  <span class="prodBackPrice">$7.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: quiche pollo pimentón"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Quiche Pollo Pimentón</h3><span class="prodPrice">$7.500</span></div>
+                  <p class="prodPreview">Con pimentón</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Quiche de pollo con pimentón.</p>
+                  <span class="prodBackPrice">$7.500</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- BOLLERÍA -->
+          <div class="menugrid" data-menupanel="bolleria">
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: rollo de canela"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Rollo de Canela</h3><span class="prodPrice">$3.990</span></div>
+                  <p class="prodPreview">Cinnamon Roll</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Cinnamon Roll horneado en casa.</p>
+                  <span class="prodBackPrice">$3.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: medialuna"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Medialuna</h3><span class="prodPrice">$2.200</span></div>
+                  <p class="prodPreview">Clásica</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Clásica medialuna de mantequilla.</p>
+                  <span class="prodBackPrice">$2.200</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: cookie nutella"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>New York Cookie Nutella</h3><span class="prodPrice">$3.650</span></div>
+                  <p class="prodPreview">Rellena de Nutella</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Cookie estilo Nueva York rellena de Nutella.</p>
+                  <span class="prodBackPrice">$3.650</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: cookie oreo"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>New York Cookie Oreo</h3><span class="prodPrice">$3.650</span></div>
+                  <p class="prodPreview">Con Oreo</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Cookie estilo Nueva York con Oreo.</p>
+                  <span class="prodBackPrice">$3.650</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: cookie m&m"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>New York Cookie M&amp;M</h3><span class="prodPrice">$3.650</span></div>
+                  <p class="prodPreview">Con M&amp;M's</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Cookie estilo Nueva York con M&amp;M's.</p>
+                  <span class="prodBackPrice">$3.650</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: cookie bloom pink"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Cookie Bloom Pink Maní</h3><span class="prodPrice">$3.650</span></div>
+                  <p class="prodPreview">Vegana y sin gluten</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Mantequilla de maní y frambuesa. Vegana y sin gluten.</p>
+                  <span class="prodBackPrice">$3.650</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: cookie crumble cinnamon"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>New York Cookie Crumble Cinnamon</h3><span class="prodPrice">$3.650</span></div>
+                  <p class="prodPreview">Crumble de canela</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Cookie estilo Nueva York con crumble de canela.</p>
+                  <span class="prodBackPrice">$3.650</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          <!-- MERCH -->
+          <div class="menugrid" data-menupanel="merch">
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: llaveros perritos colgantes"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Llaveros Perritos Colgantes</h3><span class="prodPrice">$5.990</span></div>
+                  <p class="prodPreview">Forma de perrito</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Llaveros colgantes con forma de perrito.</p>
+                  <span class="prodBackPrice">$5.990</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: llaveros club de perritos 3D"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Llaveros Club de Perritos 3D</h3><span class="prodPrice">$4.800</span></div>
+                  <p class="prodPreview">Terminación holográfica</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Variedad de llaveros 3D con terminación holográfica.</p>
+                  <span class="prodBackPrice">$4.800</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: pins"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Pins</h3><span class="prodPrice">$5.000</span></div>
+                  <p class="prodPreview">Colección Bassotto</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Pins de colección Bassotto.</p>
+                  <span class="prodBackPrice">$5.000</span>
+                </div>
+              </div>
+            </article>
+            <article class="prodCard">
+              <div class="prodCard-inner">
+                <div class="prodCard-face prodCard-front">
+                  <div class="prodPhoto" data-hint="Foto: librero salchi 3D"><span class="prodPhoto-plus">+</span></div>
+                  <div class="prodCard-row"><h3>Librero Salchi 3D</h3><span class="prodPrice">$6.300</span></div>
+                  <p class="prodPreview">Impreso en 3D</p>
+                  <span class="prodFlipHint">Tocar para más info</span>
+                </div>
+                <div class="prodCard-face prodCard-back">
+                  <p>Librero con forma de salchicha, impreso en 3D.</p>
+                  <span class="prodBackPrice">$6.300</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <p class="menunote">Precios sujetos a temporada · <a href="https://toteat.shop/r/cl/Bassotto-Cafe/22204/checkin/menu" target="_blank" rel="noopener">Ver carta oficial y stock actual ↗</a></p>
+      </div>
+    </section>
+
+    <!-- UBICACION -->
+    <section class="panel panel--center" id="ubicacion" data-panel="ubicacion">
+      <div class="panel-inner split reverse">
+        <div class="split-copy">
+          <p class="eyebrow-free">Ubicación</p>
+          <h2>Av. Presidente Riesco 6007<br>locales 8 y 9, Las Condes.</h2>
+          <div class="hourstable">
+            <div><span>Lunes a viernes</span><span>08:00 – 20:00</span></div>
+            <div><span>Sábado y domingo</span><span>09:00 – 20:00</span></div>
+          </div>
+          <ul class="chiplist">
+            <li>Pet friendly</li>
+            <li>WiFi</li>
+            <li>Baño disponible</li>
+            <li>Para llevar</li>
+            <li>Sin reserva</li>
+            <li>Efectivo, débito, crédito y transferencia</li>
+          </ul>
+          <a class="btn btn-solid" href="https://www.google.com/maps/place/Bassotto+Caf%C3%A9/@-33.4027013,-70.5730705,17z/data=!3m1!4b1!4m6!3m5!1s0x9662cf510749981d:0x193b149abdc035d7!8m2!3d-33.4027013!4d-70.5704902" target="_blank" rel="noopener">Abrir en Google Maps</a>
+        </div>
+        <div class="mapCard">
+          <div class="mapCard-frame">
+            <iframe title="Mapa Bassotto Café" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Av.+Presidente+Riesco+6007,+Las+Condes,+Santiago&z=16&output=embed"></iframe>
+          </div>
+          <div class="mapPin">
+            <div class="mapPin-title">
+              <strong>Pdte. Riesco 6007</strong>
+              <span>7560621 Las Condes, Región Metropolitana</span>
+            </div>
+            <div class="mapPin-actions">
+              <a href="https://www.google.com/maps/place/Bassotto+Caf%C3%A9/@-33.4027013,-70.5730705,17z/data=!3m1!4b1!4m6!3m5!1s0x9662cf510749981d:0x193b149abdc035d7!8m2!3d-33.4027013!4d-70.5704902" target="_blank" rel="noopener" aria-label="Abrir en Google Maps">
+                <svg viewBox="0 0 24 24" width="16" height="16"><path d="M14 3h7v7m0-7L10 14M5 5h6v2H7v10h10v-4h2v6H5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg>
+              </a>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Av.+Presidente+Riesco+6007,+Las+Condes,+Santiago" target="_blank" rel="noopener" aria-label="Cómo llegar">
+                <svg viewBox="0 0 24 24" width="16" height="16"><path d="M3 11l17-8-8 17-2-7-7-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REDES -->
+    <section class="panel panel--center" id="redes" data-panel="redes">
+      <div class="panel-inner redeswrap">
+        <p class="eyebrow-free">Comunidad</p>
+        <h2>Síguenos en la casa que uses.</h2>
+        <div class="socialgrid">
+          <a class="socialcard" href="https://www.instagram.com/bassottocafe/" target="_blank" rel="noopener">
+            <span class="socialicon"><svg viewBox="0 0 24 24" width="22" height="22"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor"/></svg></span>
+            <strong>Instagram</strong>
+            <em>@bassottocafe</em>
+          </a>
+          <a class="socialcard" href="https://www.tiktok.com/@bassottocafe" target="_blank" rel="noopener">
+            <span class="socialicon"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M14 3c.6 2.4 2.2 3.9 4.6 4.2v3c-1.7 0-3.2-.5-4.6-1.5v6.8a5.5 5.5 0 1 1-5.5-5.5c.4 0 .8 0 1.2.1v3.1a2.4 2.4 0 1 0 1.7 2.3V3z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+            <strong>TikTok</strong>
+            <em>@bassottocafe</em>
+          </a>
+          <a class="socialcard" href="https://toteat.shop/r/cl/Bassotto-Cafe/22204/checkin/menu" target="_blank" rel="noopener">
+            <span class="socialicon"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 9h14v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V9Z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><path d="M18 10h1.5a2.3 2.3 0 0 1 0 4.6H18" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M7 6.5V5M10 6.5V5M13 6.5V5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+            <strong>Menú digital</strong>
+            <em>Carta y precios</em>
+          </a>
+        </div>
+
+        <div class="gallery">
+  <!-- Galería de fotos de Bassotto -->
+  <figure class="gItem">
+    <img src="historia-1.jpg" alt="Café con latte art bajo un cuadro de Dachshund Coffee Co.">
+  </figure>
+  
+  <figure class="gItem">
+    <img src="historia-2.jpg" alt="Perro salchicha junto a una ilustración enmarcada en Bassotto">
+  </figure>
+  
+  <figure class="gItem">
+    <img src="historia-1.jpg" alt="Exterior y terraza del local Bassotto">
+  </figure>
+  
+  <figure class="gItem">
+    <img src="historia-2.jpg" alt="El equipo detrás de la barra de Bassotto">
+  </figure>
+</div>
+
+        <div class="reviewsTrack">
+          <div class="reviewsSlide">
+            <blockquote>La atención de las chicas es insuperable, y ver a tantos peluditos disfrutando da gusto.<cite>Sandra O.</cite></blockquote>
+            <blockquote>Ambiente seguro y acogedor para trabajar, con café de especialidad a buen precio.<cite>Esperanza H.</cite></blockquote>
+            <blockquote>Cafetería bonita, con una segunda terraza interior, cómoda y fresca.<cite>Sofi A.</cite></blockquote>
+            <blockquote>La atención de las chicas es insuperable, y ver a tantos peluditos disfrutando da gusto.<cite>Sandra O.</cite></blockquote>
+            <blockquote>Ambiente seguro y acogedor para trabajar, con café de especialidad a buen precio.<cite>Esperanza H.</cite></blockquote>
+            <blockquote>Cafetería bonita, con una segunda terraza interior, cómoda y fresca.<cite>Sofi A.</cite></blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <nav class="dotnav" aria-label="Progreso de secciones">
+    <button data-goto="inicio" class="dot is-active" aria-label="Inicio"></button>
+    <button data-goto="historia" class="dot" aria-label="Nuestra historia"></button>
+    <button data-goto="menu" class="dot" aria-label="Menú"></button>
+    <button data-goto="ubicacion" class="dot" aria-label="Ubicación"></button>
+    <button data-goto="redes" class="dot" aria-label="Redes"></button>
+  </nav>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
